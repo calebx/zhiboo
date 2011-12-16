@@ -1,0 +1,27 @@
+<h1>Listing tiezis</h1>
+
+<table>
+  <tr>
+    <th>Link</th>
+    <th>Url</th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tiezis.each do |tiezi| %>
+  <tr>
+    <td><%= tiezi.link %></td>
+    <td><%= tiezi.url %></td>
+    <td><%= tiezi.title %></td>
+    <td><%= link_to 'Show', tiezi %></td>
+    <td><%= link_to 'Edit', edit_tiezi_path(tiezi) %></td>
+    <td><%= link_to 'Destroy', tiezi, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tiezi', new_tiezi_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Link:</b>
+  <%= @tiezi.link %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @tiezi.url %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @tiezi.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_tiezi_path(@tiezi) %> |
+<%= link_to 'Back', tiezis_path %>
