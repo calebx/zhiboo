@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Link:</b>
+  <b>源自:</b>
   <%= @tiezi.link %>
 </p>
 
 <p>
-  <b>Url:</b>
+  <b>地址:</b>
   <%= @tiezi.url %>
 </p>
 
 <p>
-  <b>Title:</b>
+  <b>标题:</b>
   <%= @tiezi.title %>
 </p>
 
@@ -19,5 +19,5 @@
   <p><%= value[1] %>:</p>
 <% end %>
 
-<%= link_to 'Edit', edit_tiezi_path(@tiezi) %> |
+<%= #link_to 'Edit', edit_tiezi_path(@tiezi) %> |
 <%= link_to 'Back', tiezis_path %>
