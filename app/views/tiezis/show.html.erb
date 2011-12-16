@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>源自:</b>
-  <%= @tiezi.link %>
+  <b>源自:豆瓣</b>
+  <% @tiezi.link %>
 </p>
 
 <p>
@@ -11,13 +11,13 @@
 </p>
 
 <p>
-  <b>标题:</b>
-  <%= @tiezi.title %>
+  <b>----</b>
+  <% @tiezi.title %>
 </p>
 
 <% @tz_content.each do |key,value| %>
   <p><%= value[1] %>:</p>
 <% end %>
 
-<%= #link_to 'Edit', edit_tiezi_path(@tiezi) %> |
-<%= link_to 'Back', tiezis_path %>
+<%= link_to '再看别的', "new" %> |
+<% link_to 'Back', tiezis_path %>

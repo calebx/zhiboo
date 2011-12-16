@@ -14,7 +14,7 @@ class TiezisController < ApplicationController
   # GET /tiezis/1.json
   def show
     @tiezi = Tiezi.find(params[:id])
-    @tiezi.create(@tiezi.url)
+    @tiezi.init_url(@tiezi.url)
     @tiezi.chk_url
     @tiezi.fatch_tiezi
     @tiezi.next_url

@@ -8,7 +8,7 @@ class Tiezi < ActiveRecord::Base
 	#@tiezi = {}
   #@reply_num
 
-	def create(u)
+	def init_url(u)
 		@url = u
   end
 

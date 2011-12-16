@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :link %><br />
-    <%= f.text_field :link %>
+    <% f.label :link %><br />
+    <% f.text_field :link %>
   </div>
   <div class="field">
-    <%= f.label :url %><br />
+    <%= f.label "在这里输入完整的帖子地址：" %><br />
     <%= f.text_field :url %>
   </div>
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <% f.label :title %><br />
+    <% f.text_field :title %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "我要脱水" %>
   </div>
 <% end %>
