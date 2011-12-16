@@ -15,6 +15,9 @@
   <%= @tiezi.title %>
 </p>
 
+<% @tz_content.each do |key,value| %>
+  <p><%= value[1] %>:</p>
+<% end %>
 
 <%= link_to 'Edit', edit_tiezi_path(@tiezi) %> |
 <%= link_to 'Back', tiezis_path %>

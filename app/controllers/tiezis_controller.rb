@@ -14,7 +14,12 @@ class TiezisController < ApplicationController
   # GET /tiezis/1.json
   def show
     @tiezi = Tiezi.find(params[:id])
-
+    @tiezi.create(@tiezi.url)
+    @tiezi.chk_url
+    @tiezi.fatch_tiezi
+    @tiezi.next_url
+    @tiezi.tuoshui
+    @tz_content = @tiezi.to_something
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @tiezi }
